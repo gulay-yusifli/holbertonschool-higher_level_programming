@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""Simple class for a square."""
+"""Simple class that shows a square."""
 
 
 class Square:
-    """A class that shows a square."""
+    """A class that makes a square."""
 
     def __init__(self, size=0):
         """
-        Start the square.
+        Create a new square.
 
         Args:
             size (int): side length (default is 0).
@@ -28,7 +28,7 @@ class Square:
             value (int): new length.
         Raises:
             TypeError: if value is not an int.
-            ValueError: if value < 0.
+            ValueError: if value is less than 0.
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -39,3 +39,11 @@ class Square:
     def area(self):
         """Return the area of the square."""
         return self.__size ** 2
+
+    def my_print(self):
+        """Print the square using # character."""
+        if self.__size == 0:
+            print("")
+        else:
+            for _ in range(self.__size):
+                print("#" * self.__size)
