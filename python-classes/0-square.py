@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""
+This file makes an empty class called Square.
+"""
+
+
 class Square:
-    """Class Square that defines a square.
-    """
+    """An empty class for a square."""
     pass
